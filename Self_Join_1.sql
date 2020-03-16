@@ -1,3 +1,9 @@
+"""
+Join populations with itself ON country_code.
+Select the country_code from p1 and the size field from both p1 and p2. 
+SQL won't allow same-named fields, so alias p1.size as size2010 and p2.size as size2015.
+"""
+
 -- 4. Select fields with aliases
 SELECT p1.country_code, 
 p1.size AS size2010, 
