@@ -42,3 +42,16 @@ WHERE code IN
    WHERE region = 'Middle East')
 -- Order by name
 ORDER BY name;
+
+
+"""
+Sometimes problems solved with semi-joins can also be solved using an inner join. 
+Write the inner join code for semi join used in the last task.
+"""
+
+SELECT DISTINCT languages.name AS language
+FROM languages
+INNER JOIN countries
+ON languages.code = countries.code
+WHERE region = 'Middle East'
+ORDER BY language;
