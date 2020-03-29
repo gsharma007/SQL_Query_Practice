@@ -75,4 +75,4 @@ FROM countries_plus AS c
     -- 3. Match on country code
     ON c.code = p.country_code
 -- 4. Order the table    
-ORDER BY geosize_group;
+ORDER BY geosize_group
