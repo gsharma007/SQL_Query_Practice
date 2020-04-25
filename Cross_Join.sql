@@ -12,7 +12,6 @@ FROM cities AS c
 -- 3. Where c.name like Hyderabad
 WHERE c.name LIKE 'Hyder%';
 
-
 """
 Use an inner join instead of a cross join. 
 Think about what the difference will be in the results for this inner join result and the one for the cross join.
